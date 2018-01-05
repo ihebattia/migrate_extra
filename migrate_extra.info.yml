@@ -1,0 +1,8 @@
+name: Migrate Extra
+type: module
+description: Extra drush support for Drupal upgrade.
+package: Custom
+core: 8.x
+dependencies:
+  - migrate_tools:migrate_tools
+  - config_devel:config_devel
