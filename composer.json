@@ -1,0 +1,8 @@
+{
+  "name": "ihebattia/migrate_extra",
+  "description": "Extra drush support for Drupal upgrade.",
+  "type": "drupal-module",
+  "require": {
+      "yosymfony/resource-watcher": "1.2.0"
+  }
+}
