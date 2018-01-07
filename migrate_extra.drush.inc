@@ -22,8 +22,8 @@ function migrate_extra_drush_command() {
      ],
      'examples' => [
        'drush mdw module_name migrate_drupal_6_node_user' => 'Import new users given the migrate_drupal_6 group.',
-       'drush mdw module_name migrate_drupal_6_node_page --limit=10' => 'Import no more than 10 pages',
-       'drush mdw module_name migrate_drupal_6_node_law --limit=10 --dependencies="upgrade_d6_user"' => 'Import no more than 10 laws given the user depdency',
+       'drush mdw module_name migrate_drupal_6_node_page --limit=10' => 'Import only 10 pages',
+       'drush mdw module_name migrate_drupal_6_node_law --limit=10 --dependencies="upgrade_d6_user"' => 'Import 10 laws given specified depdencies',
      ],
   ];
 
@@ -71,8 +71,8 @@ function drush_migrate_extra_migrate_debug_watch($module_name, $target) {
   $finder = new Finder();
   $finder->files()
       ->name('*.yml')
-      ->in(__DIR__ . '/../dcaf_migration/config/install/');
-  $rc = new ResourceCacheFile(__DIR__ . '/cache-file.php');
+      ->in(__DIR__ . '/cache');
+  $rc = new ResourceCacheFile(__DIR__ . 'cache/cache-file.php');
   $rw = new ResourceWatcher($rc);
   $rw->setFinder($finder);
 
