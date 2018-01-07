@@ -1,13 +1,22 @@
 # Migration extra drush commands usage
 
-This is a procedural narrative about how to use migration extra drush commands.
+> This is a procedural narrative about how to use migration extra drush commands.
 Here is how to use the migration extra drush commands :
+
+### Installation
+
+```bash
+cd drupal8/docroot/modules/
+composer require "yosymfony/resource-watcher: 1.2.0"
+git clone git@github.com:ihebattia/migrate_extra.git
+drush en migrate_extra -y
+```
 
 ### Developing migrations editing YAML files
 
-In this case you can either use ```drush migrate-debug-watch``` or ```drush migrate-debug-cycle```.
+> In this case you can either use ```drush migrate-debug-watch``` or ```drush migrate-debug-cycle```.
 
-Procedures:
+##### Procedures:
 
 1. From your docroot run ```drush migrate-debug-watch```
 
