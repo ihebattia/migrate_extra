@@ -71,8 +71,8 @@ function drush_migrate_extra_migrate_debug_watch($module_name, $target) {
   $finder = new Finder();
   $finder->files()
       ->name('*.yml')
-      ->in(__DIR__ . '/cache');
-  $rc = new ResourceCacheFile(__DIR__ . 'cache/cache-file.php');
+      ->in(__DIR__ . '/../' . $module_name . '/config/install/');
+  $rc = new ResourceCacheFile(__DIR__ . '/cache/cache-file.php');
   $rw = new ResourceWatcher($rc);
   $rw->setFinder($finder);
 
