@@ -1,2 +1,2 @@
-# Ignore generated cache files
-cache/*
+# Ignore auto-generated cache file
+cache/cache-file.php
