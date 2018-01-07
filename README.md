@@ -1,7 +1,7 @@
 # Migration extra drush commands usage
 
 This is a procedural narrative about how to use migration extra drush commands.
-There are two scenarios to use the migration extra drush commands :
+Here is how to use the migration extra drush commands :
 
 ### Developing migrations editing YAML files
 
@@ -16,7 +16,7 @@ new config any time you edit yaml and then rerun the target import.
 
 Example:
 
-Run ```drush migrate-debug-cycle dcaf_migration upgrade_d6_node_loi --dependencies='upgrade_d6_user'```
+Run ```drush migrate-debug-cycle dcaf_migration upgrade_d6_node_page --dependencies='upgrade_d6_user'```
 
 2. From your docroot run ```drush migrate-debug-cycle```
 
@@ -25,4 +25,4 @@ but doesn't watch your configuration files you will need to run it every time yo
 
 Example:
 
-Run ```drush migrate-debug-cycle dcaf_migration upgrade_d6_node_loi --dependencies='upgrade_d6_user'```
+Run ```drush migrate-debug-cycle dcaf_migration upgrade_d6_node_page --dependencies='upgrade_d6_user'```
