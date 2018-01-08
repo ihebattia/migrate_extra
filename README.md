@@ -6,8 +6,9 @@ Here is how to use the migration extra drush commands :
 ### Installation
 
 ```bash
-cd drupal8/docroot/modules/
+cd drupal/docroot/
 composer require "yosymfony/resource-watcher: 1.2.0"
+cd drupal/docroot/modules/
 git clone git@github.com:ihebattia/migrate_extra.git
 drush en migrate_extra -y
 ```
